@@ -13,7 +13,7 @@ function displayStops(filter){
 	$(document).ready(function(){
 		stops_html = '';
 		$.each(sofia_stops, function(i, stop){
-			var stop_html = '<div class="list-group"><a href="#" class="list-group-item spirka-item" style="background-image: url(\'http://www.bgmaps.com/templates/skgt/img/'+stop.id+'\');"><span class="badge">'+stop.id+'</span><h4 class="list-group-item-heading">'+stop.name+'</h4><p class="list-group-item-text">'+stop.description+' - '+stop.buses+'</p></a></div>';
+			var stop_html = '<div class="list-group"><a href="#" class="list-group-item spirka-item" style="background-image: url(\'http://www.bgmaps.com/templates/skgt/img/'+stop.id+'\');"><div class="stop-color-overlay"><span class="badge">'+stop.id+'</span><h4 class="list-group-item-heading">'+stop.name+'</h4><p class="list-group-item-text">'+stop.description+' - '+stop.buses+'</p></div></a></div>';
 			stops_html =  stops_html + stop_html;
 		});
 		$('.bus-stops-list').html(stops_html);
