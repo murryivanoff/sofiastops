@@ -1,10 +1,11 @@
 .spirka-item {
 	background-position: left center;
+	margin-bottom: 6px;
 }
 .spirka-item h4 {
 	text-shadow: 1px 1px 2px #fff;
-	font-size: 24px;
-	color: #111;
+	font-size: 22px;
+	color: #333;
 }
 .spirka-item p {
 	text-shadow: 1px 1px #fff;
@@ -15,11 +16,14 @@
 }
 .stop-color-overlay {
   padding: 10px 15px;
-  background:rgba(192,192,192,0.6);	
+  background:rgba(255,255,255,0.6);	
 }
 .stop-color-overlay .badge {
 	float: right;
-	font-size: 18px;
-	padding: 10px;
+	font-size: 22px;
+	padding: 13px;
 	font-weight: normal;
+	background: #f8f8f8;
+	color: #333;
+	border: 1px solid #ccc;
 }
