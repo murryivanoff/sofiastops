@@ -26,8 +26,8 @@ function displayStops(filter){
 $(document).ready(function(){
 	$( document ).on( "click", "a.spirka-item", function(e) {
 	  e.preventDefault();
-	  window.clipboardData.setData ("Text", 'tralala');
-	  alert( "Set in clipboard!" ); 
+	  //window.clipboardData.setData ("Text", 'tralala');
+	  alert($(this).find('.badge').text()); 
 	});
 	//window.clipboardData.setData ("Text", input.value);
 });
